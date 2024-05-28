@@ -1,0 +1,85 @@
+/*Monica Can, 04/26/2024*/
+
+:root {
+    box-sizing:border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    background: linear-gradient(45deg, #93ddff, #78e0f1, #70e1d9, #7fdfba, #9cda99, #bdd17c, #dfc56b, #ffb56b);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+}
+
+.wrapper {
+    width: 35em;
+    max-height: 30em;
+    overflow: auto;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    padding: 0 2em 0.5em 2em;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+h1 {
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
+h2 {
+    margin-bottom: 0.25em;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: grey;
+}
+
+p {
+    margin-top: 0.5em;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.8rem;
+}
+
+label {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding-bottom: 1em;
+}
+
+input {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+}
+
+button {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@media (min-width: 45em) {
+    section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
